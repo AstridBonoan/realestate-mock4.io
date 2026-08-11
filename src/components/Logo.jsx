@@ -51,6 +51,7 @@ export default function Logo({
   variant = 'dark',
   showWordmark = true,
   className = '',
+  onClick,
 }) {
   const tone = variant === 'light' ? 'text-offwhite' : 'text-forest'
   const wordTone = variant === 'light' ? 'text-offwhite' : 'text-ink'
@@ -82,6 +83,7 @@ export default function Logo({
     return (
       <Link
         to={to}
+        onClick={onClick}
         className={`inline-flex items-center gap-3 ${className}`}
         aria-label={COMPANY.name}
       >

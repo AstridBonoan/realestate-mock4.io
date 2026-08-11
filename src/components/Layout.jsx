@@ -4,11 +4,13 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 export default function Layout() {
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  }, [pathname, search])
 
   return (
     <div className="flex min-h-svh flex-col bg-offwhite">

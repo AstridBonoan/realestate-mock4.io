@@ -25,7 +25,7 @@ export default function Button({
 
   if (to) {
     return (
-      <Link to={to} className={classes} {...props}>
+      <Link to={to} onClick={onClick} className={classes} {...props}>
         {children}
       </Link>
     )
@@ -33,7 +33,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes} {...props}>
+      <a href={href} onClick={onClick} className={classes} {...props}>
         {children}
       </a>
     )

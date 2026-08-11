@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { COMPANY, NAV_LINKS } from '../data/company'
 import Logo from './Logo'
 
@@ -12,7 +12,15 @@ function LinkedInIcon() {
 
 function InstagramIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      aria-hidden="true"
+    >
       <rect x="3" y="3" width="18" height="18" rx="5" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
@@ -34,13 +42,36 @@ const social = [
   { Icon: FacebookIcon, label: 'Facebook' },
 ]
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+  document.documentElement.scrollTop = 0
+  document.body.scrollTop = 0
+}
+
 export default function Footer() {
+  const location = useLocation()
+
+  const goHome = (event) => {
+    const atHome = location.pathname === '/' || location.pathname === ''
+    if (atHome) {
+      event.preventDefault()
+      scrollToTop()
+    }
+  }
+
+  const handleNavClick = (path) => (event) => {
+    if (location.pathname === path) {
+      event.preventDefault()
+      scrollToTop()
+    }
+  }
+
   return (
     <footer className="mt-20 border-t border-softgray/50 bg-charcoal text-offwhite">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Logo variant="light" />
+            <Logo variant="light" onClick={goHome} />
             <p className="mt-5 text-sm leading-relaxed text-softgray max-w-xs">
               {COMPANY.mission}
             </p>
@@ -67,6 +98,7 @@ export default function Footer() {
                 <li key={link.path}>
                   <Link
                     to={link.path}
+                    onClick={handleNavClick(link.path)}
                     className="text-sm text-softgray transition hover:text-offwhite"
                   >
                     {link.label}
@@ -82,17 +114,29 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2.5">
               <li>
-                <Link to="/membership" className="text-sm text-softgray hover:text-offwhite">
+                <Link
+                  to="/membership"
+                  onClick={handleNavClick('/membership')}
+                  className="text-sm text-softgray hover:text-offwhite"
+                >
                   Membership
                 </Link>
               </li>
               <li>
-                <Link to="/partners" className="text-sm text-softgray hover:text-offwhite">
+                <Link
+                  to="/partners"
+                  onClick={handleNavClick('/partners')}
+                  className="text-sm text-softgray hover:text-offwhite"
+                >
                   Partnerships
                 </Link>
               </li>
               <li>
-                <Link to="/join" className="text-sm text-softgray hover:text-offwhite">
+                <Link
+                  to="/join"
+                  onClick={handleNavClick('/join')}
+                  className="text-sm text-softgray hover:text-offwhite"
+                >
                   Apply Now
                 </Link>
               </li>
