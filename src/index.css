@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  /* Cool stone surfaces — crisp and institutional */
-  --color-offwhite: #f5f6f5;
-  --color-cream: #e9ece9;
+  /* Clean professional surfaces */
+  --color-offwhite: #f3f5f7;
+  --color-cream: #e8ecf0;
   --color-tan: #6e7f76;
-  --color-softgray: #c5cdc8;
+  --color-softgray: #c2c9d0;
   --color-charcoal: #1a211e;
   --color-ink: #0b100e;
   --color-muted: #5a6560;
