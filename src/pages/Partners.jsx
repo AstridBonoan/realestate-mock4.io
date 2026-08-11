@@ -19,7 +19,7 @@ export default function Partners() {
           <div className="absolute inset-0 bg-gradient-to-br from-ink/88 via-charcoal/80 to-forest/75" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-24 md:py-32">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-tan">Partnerships</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-softgray">Partnerships</p>
           <h1 className="mt-4 max-w-3xl font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-offwhite leading-[1.02]">
             Let&apos;s Build Together.
           </h1>

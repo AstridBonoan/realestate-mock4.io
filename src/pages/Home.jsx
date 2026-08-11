@@ -103,7 +103,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-ink/90 via-forest/85 to-charcoal/80" />
               <div className="relative">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tan">Our Mission</p>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-softgray">Our Mission</p>
                 <p className="mt-6 text-xl sm:text-2xl leading-relaxed font-medium text-balance">
                   {COMPANY.mission}
                 </p>
@@ -120,7 +120,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-charcoal/90 via-ink/80 to-forest/75" />
               <div className="relative">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-tan">Our Vision</p>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-softgray">Our Vision</p>
                 <p className="mt-6 text-xl sm:text-2xl leading-relaxed font-medium text-balance">
                   {COMPANY.vision}
                 </p>

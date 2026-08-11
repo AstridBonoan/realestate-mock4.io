@@ -40,10 +40,12 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Link to="/" className="inline-flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-forest text-offwhite font-display font-bold">
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-forest text-offwhite font-body font-semibold text-sm">
                 A
               </span>
-              <span className="font-display font-bold text-lg">{COMPANY.name}</span>
+              <span className="font-body font-semibold text-[15px] tracking-[0.02em]">
+                {COMPANY.name}
+              </span>
             </Link>
             <p className="mt-5 text-sm leading-relaxed text-softgray max-w-xs">
               {COMPANY.mission}
@@ -63,7 +65,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-tan">
+            <h3 className="font-body text-[11px] font-semibold uppercase tracking-[0.18em] text-softgray">
               Explore
             </h3>
             <ul className="mt-4 space-y-2.5">
@@ -81,7 +83,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-tan">
+            <h3 className="font-body text-[11px] font-semibold uppercase tracking-[0.18em] text-softgray">
               Join
             </h3>
             <ul className="mt-4 space-y-2.5">
@@ -104,7 +106,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-tan">
+            <h3 className="font-body text-[11px] font-semibold uppercase tracking-[0.18em] text-softgray">
               Contact
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm text-softgray">

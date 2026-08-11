@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 
 const variants = {
   primary:
-    'bg-forest text-offwhite hover:bg-emerald shadow-soft',
+    'bg-forest text-offwhite hover:bg-emerald',
   secondary:
-    'bg-transparent text-ink border border-charcoal/20 hover:border-forest hover:text-forest',
+    'bg-transparent text-ink border border-charcoal/25 hover:border-forest hover:text-forest',
   light:
     'bg-offwhite text-ink hover:bg-cream',
   outlineLight:
-    'bg-transparent text-offwhite border border-offwhite/40 hover:bg-offwhite/10',
+    'bg-transparent text-offwhite border border-offwhite/45 hover:bg-offwhite/10',
 }
 
 export default function Button({
@@ -21,7 +21,7 @@ export default function Button({
   className = '',
   ...props
 }) {
-  const classes = `inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 active:scale-[0.98] ${variants[variant]} ${className}`
+  const classes = `inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-[13px] font-semibold tracking-[0.04em] uppercase transition-all duration-250 active:scale-[0.99] ${variants[variant]} ${className}`
 
   if (to) {
     return (

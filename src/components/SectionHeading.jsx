@@ -13,15 +13,15 @@ export default function SectionHeading({
     <div className={`flex flex-col max-w-3xl ${alignClass} ${className}`}>
       {eyebrow && (
         <p
-          className={`mb-3 text-xs font-semibold uppercase tracking-[0.22em] ${
-            light ? 'text-tan' : 'text-forest'
+          className={`mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] ${
+            light ? 'text-softgray' : 'text-forest'
           }`}
         >
           {eyebrow}
         </p>
       )}
       <h2
-        className={`text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.05] text-balance ${
+        className={`text-3xl sm:text-4xl md:text-[2.75rem] font-semibold leading-[1.12] text-balance ${
           light ? 'text-offwhite' : 'text-ink'
         }`}
       >

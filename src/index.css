@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-offwhite: #f7f4ef;
-  --color-cream: #efe8dc;
-  --color-tan: #c4a484;
-  --color-softgray: #d6d0c8;
-  --color-charcoal: #1c1c1c;
-  --color-ink: #0a0a0a;
-  --color-muted: #5c5a56;
-  --color-forest: #0f3d2e;
-  --color-emerald: #1a5c45;
-  --color-forest-light: #2a7a5c;
-  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Figtree", ui-sans-serif, system-ui, sans-serif;
-  --shadow-soft: 0 12px 40px rgba(10, 10, 10, 0.08);
-  --shadow-float: 0 18px 50px rgba(15, 61, 46, 0.14);
+  /* Cool stone surfaces — crisp and institutional */
+  --color-offwhite: #f5f6f5;
+  --color-cream: #e9ece9;
+  --color-tan: #6e7f76;
+  --color-softgray: #c5cdc8;
+  --color-charcoal: #1a211e;
+  --color-ink: #0b100e;
+  --color-muted: #5a6560;
+  /* Deep evergreen — restrained accent */
+  --color-forest: #0a3329;
+  --color-emerald: #124a3c;
+  --color-forest-light: #1a6350;
+  --font-display: "Source Serif 4", "Times New Roman", ui-serif, Georgia, serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --shadow-soft: 0 8px 28px rgba(11, 16, 14, 0.06);
+  --shadow-float: 0 16px 40px rgba(10, 51, 41, 0.12);
 }
 
 @layer base {
@@ -25,6 +27,9 @@
   body {
     margin: 0;
     font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
     color: var(--color-charcoal);
     background-color: var(--color-offwhite);
     -webkit-font-smoothing: antialiased;
@@ -40,7 +45,9 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.03em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
     color: var(--color-ink);
   }
 
@@ -67,10 +74,10 @@
 
   .reveal {
     opacity: 0;
-    transform: translateY(28px);
+    transform: translateY(24px);
     transition:
-      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .reveal.is-visible {

@@ -40,10 +40,10 @@ export default function Navbar() {
         aria-label="Primary"
       >
         <Link to="/" className="group flex items-center gap-2.5 shrink-0">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-forest text-offwhite font-display font-bold text-lg transition-transform group-hover:scale-105">
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-forest text-offwhite font-body font-semibold text-sm tracking-wide">
             A
           </span>
-          <span className="font-display font-bold text-lg tracking-tight text-ink">
+          <span className="font-body font-semibold text-[15px] tracking-[0.02em] text-ink">
             {COMPANY.name}
           </span>
         </Link>

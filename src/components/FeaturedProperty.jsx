@@ -19,7 +19,7 @@ export default function FeaturedProperty({ property, reverse = false }) {
           reverse ? 'lg:order-1' : ''
         }`}
       >
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-tan">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-softgray">
           Featured · {property.type}
         </span>
         <h3 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-offwhite leading-tight">

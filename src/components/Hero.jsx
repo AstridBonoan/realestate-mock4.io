@@ -9,10 +9,10 @@ export default function Hero() {
     <section className="relative overflow-hidden">
       <div className="mx-auto grid max-w-7xl lg:grid-cols-2 min-h-[calc(100svh-5rem)]">
         <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-10 py-14 sm:py-20 lg:py-24">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-forest">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-forest">
             Aurea Network · Mockup Design #4
           </p>
-          <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold leading-[1.02] text-ink text-balance">
+          <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-[3.65rem] font-semibold leading-[1.08] text-ink text-balance">
             Real Estate Is Built On Relationships.
           </h1>
           <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-muted">
