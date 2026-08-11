@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import { COMPANY, NAV_LINKS } from '../data/company'
+import { NAV_LINKS } from '../data/company'
 import Button from './Button'
+import Logo from './Logo'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -39,14 +40,7 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-10 py-4"
         aria-label="Primary"
       >
-        <Link to="/" className="group flex items-center gap-2.5 shrink-0">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-forest text-offwhite font-body font-semibold text-sm tracking-wide">
-            A
-          </span>
-          <span className="font-body font-semibold text-[15px] tracking-[0.02em] text-ink">
-            {COMPANY.name}
-          </span>
-        </Link>
+        <Logo />
 
         <ul className="hidden lg:flex items-center gap-1">
           {NAV_LINKS.map((link) => (

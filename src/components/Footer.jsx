@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { COMPANY, NAV_LINKS } from '../data/company'
+import Logo from './Logo'
 
 function LinkedInIcon() {
   return (
@@ -39,14 +40,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-forest text-offwhite font-body font-semibold text-sm">
-                A
-              </span>
-              <span className="font-body font-semibold text-[15px] tracking-[0.02em]">
-                {COMPANY.name}
-              </span>
-            </Link>
+            <Logo variant="light" />
             <p className="mt-5 text-sm leading-relaxed text-softgray max-w-xs">
               {COMPANY.mission}
             </p>
