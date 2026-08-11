@@ -164,9 +164,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-softgray/80">
-            © {new Date().getFullYear()} {COMPANY.name}. Mockup Design #4 — placeholder content.
-          </p>
+          <div className="space-y-2">
+            <p className="text-xs text-softgray/80">
+              © {new Date().getFullYear()} {COMPANY.name}. Mockup Design #4 — placeholder content.
+            </p>
+            <p className="text-xs text-softgray/90">
+              Design &amp; development by{' '}
+              <span className="text-offwhite/90">B&amp;C Software &amp; Web</span>.
+            </p>
+          </div>
           <div className="flex flex-wrap gap-4 text-xs text-softgray/80">
             <a href="#privacy" className="hover:text-offwhite">
               Privacy Policy
