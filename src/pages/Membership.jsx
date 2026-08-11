@@ -7,9 +7,7 @@ import CTASection from '../components/CTASection'
 import ScrollReveal from '../components/ScrollReveal'
 import { membershipBenefits, membershipSteps } from '../data/content'
 import { team } from '../data/team'
-
-const BANNER_IMAGE =
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80'
+import { IMG } from '../data/images'
 
 export default function Membership() {
   return (
@@ -38,7 +36,7 @@ export default function Membership() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] shadow-float">
                 <img
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a79c027c8?auto=format&fit=crop&w=1400&q=80"
+                  src={IMG.membershipHero}
                   alt="Members collaborating in a modern interior space"
                   className="aspect-[4/5] w-full object-cover"
                 />
@@ -115,7 +113,7 @@ export default function Membership() {
             description="Join a growing community of people building relationships and exploring opportunities through real estate."
             primaryLabel="Join Now"
             primaryTo="/join"
-            image={BANNER_IMAGE}
+            image={IMG.membershipBanner}
           />
         </ScrollReveal>
       </div>

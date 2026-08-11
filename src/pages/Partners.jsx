@@ -4,6 +4,7 @@ import PartnerCard from '../components/PartnerCard'
 import CTASection from '../components/CTASection'
 import ScrollReveal from '../components/ScrollReveal'
 import { partnerCategories } from '../data/content'
+import { IMG } from '../data/images'
 
 export default function Partners() {
   return (
@@ -11,7 +12,7 @@ export default function Partners() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=80"
+            src={IMG.partnersHero}
             alt=""
             className="h-full w-full object-cover"
             aria-hidden="true"
@@ -58,6 +59,7 @@ export default function Partners() {
             primaryTo="/contact"
             secondaryLabel="Join As A Member"
             secondaryTo="/join"
+            image={IMG.partnerCta}
           />
         </ScrollReveal>
       </div>

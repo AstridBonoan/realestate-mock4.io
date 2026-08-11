@@ -12,17 +12,9 @@ import ScrollReveal from '../components/ScrollReveal'
 import { COMPANY } from '../data/company'
 import { whatWeDo, testimonials } from '../data/content'
 import { properties } from '../data/properties'
+import { IMG } from '../data/images'
 
 const icons = [Users, Building2, HomeIcon, Handshake]
-
-const INTRO_IMAGE =
-  'https://images.unsplash.com/photo-1600047509807-ba8f99d2cd00?auto=format&fit=crop&w=1400&q=80'
-
-const PARTNER_IMAGE =
-  'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=80'
-
-const FINAL_IMAGE =
-  'https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1600&q=80'
 
 export default function Home() {
   const featured = properties.filter((p) => p.featured).slice(0, 1)
@@ -50,7 +42,7 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] shadow-float">
                 <img
-                  src={INTRO_IMAGE}
+                  src={IMG.intro}
                   alt="Editorial interior space representing community and place"
                   className="aspect-[5/4] w-full object-cover"
                 />
@@ -96,7 +88,7 @@ export default function Home() {
           <ScrollReveal delay={80}>
             <article className="relative overflow-hidden rounded-[2rem] min-h-[320px] p-8 sm:p-10 text-offwhite">
               <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                src={IMG.mission}
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
                 aria-hidden="true"
@@ -113,7 +105,7 @@ export default function Home() {
           <ScrollReveal delay={160}>
             <article className="relative overflow-hidden rounded-[2rem] min-h-[320px] p-8 sm:p-10 text-offwhite">
               <img
-                src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80"
+                src={IMG.vision}
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
                 aria-hidden="true"
@@ -204,7 +196,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] relative">
             <img
-              src={PARTNER_IMAGE}
+              src={IMG.partnerCta}
               alt=""
               className="absolute inset-0 h-full w-full object-cover"
               aria-hidden="true"
@@ -269,7 +261,7 @@ export default function Home() {
             primaryTo="/join"
             secondaryLabel="Contact Us"
             secondaryTo="/contact"
-            image={FINAL_IMAGE}
+            image={IMG.finalCta}
           />
         </ScrollReveal>
       </div>

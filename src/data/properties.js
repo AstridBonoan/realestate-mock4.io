@@ -1,3 +1,5 @@
+import { IMG } from './images'
+
 export const properties = [
   {
     id: 'riverside-lofts',
@@ -11,13 +13,8 @@ export const properties = [
     featured: true,
     size: 'large',
     cta: 'View Opportunity',
-    image:
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a79c027c8?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.riverside,
+    gallery: [IMG.riverside, IMG.modernInterior, IMG.livingRoom, IMG.kitchen],
     description:
       'A thoughtfully designed riverside residential opportunity with strong rental demand and long-term appreciation potential.',
     shortDescription:
@@ -42,12 +39,8 @@ export const properties = [
     featured: false,
     size: 'small',
     cta: 'View Rental',
-    image:
-      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.houseExterior,
+    gallery: [IMG.houseExterior, IMG.apartment, IMG.bedroom, IMG.porch],
     description:
       'A well-maintained duplex near parks and local shops—ideal for members exploring rental living or investment income.',
     shortDescription: 'Bright duplex near parks and neighborhood amenities.',
@@ -71,12 +64,8 @@ export const properties = [
     featured: false,
     size: 'small',
     cta: 'View Opportunity',
-    image:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.tower,
+    gallery: [IMG.tower, IMG.office, IMG.partnerCta, IMG.mission],
     description:
       'A flexible commercial suite in a growing corridor—suited for operators and partners seeking stable foot traffic.',
     shortDescription: 'Flexible commercial suite in a rising corridor.',
@@ -100,13 +89,8 @@ export const properties = [
     featured: true,
     size: 'large',
     cta: 'View Opportunity',
-    image:
-      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=80',
-      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cd00?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.luxuryHome,
+    gallery: [IMG.luxuryHome, IMG.modernHome, IMG.interiorWarm, IMG.kitchen],
     description:
       'An elevated hillside residence with architectural presence and strong appeal for lifestyle buyers and long-term holds.',
     shortDescription: 'Architectural hillside home with elevated views.',
@@ -130,12 +114,8 @@ export const properties = [
     featured: false,
     size: 'small',
     cta: 'View Rental',
-    image:
-      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1493809842364-78817add758f?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.loft,
+    gallery: [IMG.loft, IMG.livingRoom, IMG.bedroom, IMG.apartment],
     description:
       'A refined urban flat steps from cafes and markets—designed for members seeking convenience and community.',
     shortDescription: 'Urban flat near cafes, markets, and transit.',
@@ -159,11 +139,8 @@ export const properties = [
     featured: false,
     size: 'small',
     cta: 'View Rental',
-    image:
-      'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.bungalow,
+    gallery: [IMG.bungalow, IMG.porch, IMG.bedroom, IMG.kitchen],
     description:
       'A calm lakeside bungalow with outdoor living space—ideal for those seeking quieter living with network proximity.',
     shortDescription: 'Calm lakeside living with outdoor space.',
@@ -187,11 +164,8 @@ export const properties = [
     featured: false,
     size: 'small',
     cta: 'View Opportunity',
-    image:
-      'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
-    ],
+    image: IMG.warehouse,
+    gallery: [IMG.warehouse, IMG.tower, IMG.office, IMG.partnerCta],
     description:
       'A versatile warehouse asset with loading access and conversion potential for partners exploring industrial use.',
     shortDescription: 'Versatile warehouse with conversion potential.',

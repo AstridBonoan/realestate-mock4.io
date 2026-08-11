@@ -1,8 +1,6 @@
 import Button from './Button'
 import FloatingCard from './FloatingCard'
-
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80'
+import { IMG } from '../data/images'
 
 export default function Hero() {
   return (
@@ -30,7 +28,7 @@ export default function Hero() {
         <div className="relative min-h-[420px] sm:min-h-[520px] lg:min-h-full">
           <div className="absolute inset-4 sm:inset-6 lg:inset-y-8 lg:right-10 lg:left-4 overflow-hidden rounded-[2rem] shadow-float">
             <img
-              src={HERO_IMAGE}
+              src={IMG.hero}
               alt="Modern architectural residence representing premium real estate"
               className="h-full w-full object-cover"
             />

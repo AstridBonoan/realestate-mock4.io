@@ -3,6 +3,7 @@ import ScrollReveal from '../components/ScrollReveal'
 import CTASection from '../components/CTASection'
 import { COMPANY } from '../data/company'
 import { aboutTimeline } from '../data/content'
+import { IMG } from '../data/images'
 
 const values = [
   {
@@ -29,7 +30,7 @@ export default function About() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1493809842364-78817add758f?auto=format&fit=crop&w=1800&q=80"
+            src={IMG.aboutHero}
             alt=""
             className="h-full w-full object-cover"
             aria-hidden="true"
@@ -157,6 +158,7 @@ export default function About() {
           primaryTo="/join"
           secondaryLabel="Contact Us"
           secondaryTo="/contact"
+          image={IMG.finalCta}
         />
       </div>
     </>
